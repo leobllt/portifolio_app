@@ -37,16 +37,25 @@
         <div class="inicio-container">
             <img src="foto-perfil2.png" alt="">
 
-            <div class="acesso-rapido">
+            <div class="resumo">
                 <div>
                     <h3>Olá, sou o</h3>
                     <h1>Leonardo Bellato</h1>
-                    <span>Desenvolvedor Web</span>
-                </div>
+                    <span>Desenvolvedor Full Stack</span>
 
+                    <div class="blob-container">
+                        <div class="blob"></div>
+                        <p>Disponível para trabalho</p>
+
+                        <div class="localizacao">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Ponta Grossa - PR</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="grupo-btn">
                     <div class="btn">Baixar CV</div>
-                    <div class="btn">Contato</div>
+                    <div class="btn">Fale comigo</div>
                 </div>
 
                 <div class="redes-sociais">
@@ -104,11 +113,23 @@
     <section id="contato" class="contato">
         <h2 class="titulo-secao">Contato</h2>
 
-        <div class="formulario">
-            <div class="campo">
-                <input type="text" placeholder="exemplo@email.com">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
+        <div class="form-container">
+            <form action="#">
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Digite seu nome">
+                </div>
+
+                <div class="campo-email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com">
+                </div>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
         </div>
     </section>
 
