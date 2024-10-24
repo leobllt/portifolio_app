@@ -39,7 +39,7 @@
 
             <div class="resumo">
                 <div>
-                    <h3>Olá, sou o</h3>
+                    <h3>Olá, eu sou o</h3>
                     <h1>Leonardo Bellato</h1>
                     <span>Desenvolvedor Full Stack</span>
 
@@ -53,14 +53,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="grupo-btn">
+                <!--<div class="grupo-btn">
                     <div class="btn">Baixar CV</div>
                     <div class="btn">Fale comigo</div>
-                </div>
+                </div>-->
 
                 <div class="redes-sociais">
                     <i class="fa-brands fa-github"></i>
                     <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    
                 </div>
             </div>
         </div>
@@ -113,11 +115,22 @@
     <section id="contato" class="contato">
         <h2 class="titulo-secao">Contato</h2>
 
+        <div class="links-contato">
+            <div class="link">
+                <i class="fa-brands fa-square-whatsapp" style="color: #4ADE80"></i>
+                <p>Whatsapp</p>
+            </div>
+            <div class="link">
+                <i class="fa-solid fa-envelope"></i>
+                <p>E-mail</p>
+            </div>
+        </div>
+
         <div class="form-container">
             <form action="#">
                 <div>
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" placeholder="Digite seu nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
                 </div>
 
                 <div class="campo-email">
@@ -125,17 +138,21 @@
                     <input type="email" id="email" placeholder="exemplo@email.com">
                 </div>
 
-                <label for="message">Mensagem</label>
-                <textarea id="message" rows="5" placeholder="Digite sua mensagem"></textarea>
+                <label for="assunto">Assunto</label>
+                <textarea id="assunto" rows="1" placeholder="Digite o assunto"></textarea>
 
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+                <br>
                 <button type="submit" class="btn-submit">Enviar Mensagem</button>
             </form>
         </div>
-    </section>
 
-    <footer>
-        <p>© Todos os direitos reservados | Leonardo Bellato</p>
-    </footer>
+        <footer>
+            <p>© Todos os direitos reservados | Leonardo Bellato</p>
+        </footer>
+    </section>
 
     <script src="index.js"></script>
 </body>

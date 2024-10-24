@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
@@ -16,7 +20,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 8rem;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(8px);
     color: white;
@@ -39,14 +43,15 @@ header{
 
 .nav-links{
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
+    font-size:large;
 }
     
 
 .nav-links li a{
     position: relative;
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     text-wrap: nowrap;
 }
 
@@ -124,7 +129,7 @@ section{
 }
 
 .inicio img{
-    width: 30vw;
+    width: 25vw;
     border-radius: 50%;
 }
 
@@ -137,32 +142,52 @@ section{
 }
 
 .resumo h3{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 500;
     opacity: 0.8;
 }
 
 .resumo h1{
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .resumo span{
-    background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+    background: linear-gradient(
+    125deg,
+    royalblue,
+    #5768df,
+    #8164d7,
+    #aa60c8,
+    #cc60b3,
+    #e3689c,
+    #ed7889,
+    #ee8c7e,
+    #e99e7c,
+    #e4ac7f,
+    #e0b585,
+    burlywood
+    );
     background-clip: text;
     color: transparent;
-    font-size: 2rem;
+    font-size: 2.3rem;
+    font-weight: 500;
 }
 
 .blob-container{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     display: flex;
     flex-direction: row;
+    font-size:large;
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
 }
 
 .blob {
@@ -195,13 +220,18 @@ section{
 }
 
 .localizacao{
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
     text-align: center;
+}
+
+.resumo i{
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .mouse-container{
@@ -243,6 +273,7 @@ section{
 }
 
 .redes-sociais{
+    margin-top: 1rem;
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -263,13 +294,13 @@ section{
     font-size: 4rem;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 3rem;
 }
 
 .grid-projetos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    margin-top: 4rem;
 }
 
 .cartao-projeto{
@@ -320,11 +351,11 @@ section{
 }
 
 .form-container {
-    padding: 20px;
+    padding: 1rem 1.5rem;
     border-radius: 8px;
-    width: 700px;
+    width: 800px;
     max-width: 90%;
-    border: 1px solid darkgray;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -335,13 +366,15 @@ form {
 
 label {
     display: block;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
+    font-weight: 400;
     margin-bottom: 5px;
 }
 
 form > label{
     margin-top: 1rem;
 }
+
 
 input[type="text"],
 input[type="email"],
@@ -352,6 +385,7 @@ textarea {
     border-radius: 5px;
     color: black;
     font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 textarea {
@@ -362,7 +396,7 @@ textarea {
 .btn-submit {
     grid-column: 1 / span 2;
     padding: 10px;
-    background-color: #dddddd;
+    background-color: rgba(0, 0, 0, 0.1);
     color: #000000;
     border: none;
     border-radius: 5px;
@@ -374,6 +408,38 @@ textarea {
     background-color: #dddddd;
 }
 
+.contato{
+    padding: 8rem 12% 0 12%;
+}
+
+
+.links-contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    margin: 2rem 0 1.5rem 0;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.links-contato > .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    border-right: 1px solid #a4a3a3;
+    padding: 0.5rem 1rem;
+}
+
+.links-contato > .link ~ .link{
+    border-right: none;
+}
+
+
 footer{
     bottom: 0;
     left: 0;
@@ -382,12 +448,14 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: auto;
 }
 
 footer p{
     font-size: small;
     margin-top: 2rem;
 }
+
 
 @media (max-width: 1280px){
     header{
